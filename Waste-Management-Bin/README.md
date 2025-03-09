@@ -1,84 +1,44 @@
-# ♻️ Zero-Waste Smart Management System
+# ♻️ Smart Waste Monitoring System  
 
-## 🌐 Project Overview
-This project is an AI-powered smart waste management system designed to promote responsible waste disposal and enhance urban sanitation. It integrates litter detection, smart dustbins, and automated waste processing to optimize waste collection and promote sustainability.
+🚀 **An IoT-based waste management solution** that uses **ultrasonic sensors** to monitor bin fill levels and sends real-time alerts for optimized waste collection.  
 
-## 🚀 Features
-- 🎥 **AI-Powered Litter Detection:** Detects littering in real-time using CCTV and facial recognition.  
-- 📲 **Aadhaar-Linked Penalty System:** Issues penalties automatically by identifying offenders through Aadhaar data.  
-- 🗑️ **Smart Waste Segregation:** Automatically classifies waste as biodegradable or non-biodegradable using computer vision.  
-- 📡 **Real-Time Monitoring:** Tracks dustbin fill levels with ultrasonic sensors and sends alerts.  
-- 🔄 **Automated Waste Processing:** Converts biodegradable waste into methane and organic fertilizers.  
-- 🧲 **Magnetic Sorting System:** Separates recyclable non-biodegradable materials.  
+## 🌟 Features  
+✅ **Real-time waste monitoring** using ultrasonic sensors  
+✅ **Web dashboard** for live data visualization  
+✅ **Mobile notifications** when bin fill exceeds 85%  
+✅ **Optimized waste collection routing** using AI algorithms  
+✅ **Secure & scalable backend** (Flask + MongoDB)  
 
-## 🏗️ Tech Stack
-- **Frontend:** React.js, Tailwind CSS  
-- **Backend:** Flask (Python)  
-- **Machine Learning Libraries:** TensorFlow, PyTorch, OpenCV, NumPy, Pandas  
-- **Database:** SQLite / MySQL (based on project requirements)  
-- **Other Tools:** Ultrasonic sensors, CCTV surveillance, Magnetic conveyor systems  
+---
 
-## ⚙️ Installation Guide
+## 📷 System Architecture  
 
-### Prerequisites
-- Node.js and npm (for React)
-- Python 3.x and pip (for Flask)
-- Virtual environment (recommended for Python)
+1️⃣ **Ultrasonic sensors** detect waste levels 📡  
+2️⃣ **ESP32/NodeMCU** sends data to the backend via MQTT/HTTP 🌐  
+3️⃣ **Flask API + MongoDB** stores and processes the data 📊  
+4️⃣ **Web dashboard** displays real-time bin statuses 📺  
+5️⃣ **Flutter app** sends notifications when bins are full 📲  
 
-### Backend Setup (Flask)
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd backend
-   ```
-2. Create and activate a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Run the Flask server:
-   ```bash
-   python app.py
-   ```
+---
 
-### Frontend Setup (React)
-1. Navigate to the frontend directory:
-   ```bash
-   cd frontend
-   ```
-2. Install React dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm start
-   ```
+## 🛠️ Tech Stack  
 
-## 📱 Usage Instructions
-1. Launch both the backend (Flask) and frontend (React) servers.  
-2. Access the web application at `http://localhost:3000/`.  
-3. Use the **Waste Throwing Detect** page for real-time litter detection.  
-4. Monitor dustbin status on the **Smart Dustbin** page.  
-5. View waste processing updates on the **Automated Recycling** page.  
+| Component  | Technology Used  |
+|------------|-----------------|
+| **Frontend** | React.js, Tailwind CSS  |
+| **Backend** | Flask, MongoDB  |
+| **IoT** | ESP32, Ultrasonic Sensor (HC-SR04)  |
+| **Communication** | MQTT, REST API  |
+| **Mobile App** | Flutter (Dart)  |
+| **Routing Optimization** | Google Maps API, Dijkstra Algorithm  |
 
-## 📊 System Workflow
-1. Detects littering incidents via CCTV and issues penalties automatically.  
-2. Smart dustbins classify waste and monitor fill levels.  
-3. Real-time alerts are sent to municipal cleaners when bins are full.  
-4. Waste is processed for energy generation and recycling.  
+---
 
-## 🤝 Contributors
-- Krishna Prasad
-- Sudhin Suresh
-- Aasish S
+## 📦 Installation  
 
-## 📜 License
-This project is licensed under the [MIT License](LICENSE).
-
-## 📧 Contact
-For queries, contact us at [krishnaprasadsm63@gmail.com].
+### 🔧 **Backend Setup (Flask + MongoDB)**  
+```bash
+git clone https://github.com/yourusername/smart-waste-monitoring.git
+cd smart-waste-monitoring/backend
+pip install -r requirements.txt
+python app.py
